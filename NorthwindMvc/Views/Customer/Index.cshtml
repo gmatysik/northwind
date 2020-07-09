@@ -1,0 +1,23 @@
+@model NorthwindMvc.Models.CustomersViewModel
+
+<div class="row">
+  <div class="col-md-12">
+    <form asp-action="FindCustomer" method="post">
+        <input name="name" placeholder="Enter a country" />
+        <input type="submit" />
+    </form>
+  </div>
+</div>  
+      <div id="newspaper">
+        <ul>
+          @if(@Model != null)
+          {
+            @foreach (var item in @Model.Customers)
+            {
+              <li>
+              @Html.Raw(item.CompanyName);
+              </li>
+          }
+          }
+        </ul>
+      </div>

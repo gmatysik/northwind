@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Northwird.Shared.GmaEntities</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Grzegorz Matysik</Authors>
+    <Company>GMA</Company>
+  </PropertyGroup>
+</Project>
+

@@ -1,0 +1,18 @@
+version: "3"
+services:
+  aspnetapp:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./NorthwindService
+    ports:
+     - '5000:80'
+    volumes:
+     - ./Database/Northwind.db:/app/Northwind.db
+  web:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./NorthwindMvc
+    ports:
+     - '5001:80'
+    volumes:
+    - ./Database/Northwind.db:/app/Northwind.db
