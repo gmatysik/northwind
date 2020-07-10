@@ -39,7 +39,7 @@ namespace NorthwindMvc
             services.AddHttpClient("NorthwindWS", c =>
             {
                 //c.BaseAddress = new Uri("http://localhost:5010/");
-                c.BaseAddress = new Uri("http://aspnetapp/");
+                c.BaseAddress = new Uri("http://webservice/");
 
                 // Github API versioning
                 //c.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
