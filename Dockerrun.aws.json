@@ -1,0 +1,20 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "northwindservice",
+        "image": "gmatysik/northwindservice",
+        "hostname": "northwindservice",
+        "essential": false,
+        "memory": 128
+      },
+      {
+        "name": "northwindmvc",
+        "image": "gmatysik/northwindmvc",
+        "hostname": "northwindmvc",
+        "essential": false,
+        "memory": 128
+      }
+    ]
+  }
+  
