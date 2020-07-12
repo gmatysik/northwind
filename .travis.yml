@@ -10,14 +10,14 @@ after_success:
   - docker push gmatysik/northwindmvc
   - docker push gmatysik/northwindservice
 
-  deploy:
-    provider: elasticbeanstalk
-    region: eu-central-1
-    app: multi-dotnet
-    env: MultiDotnet-env
-    bucket_name: elasticbeanstalk-eu-central-1-413281467786
-    bucket_path: dotnet-multi
-    on:
-      branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: eu-central-1
+  app: multi-dotnet
+  env: MultiDotnet-env
+  bucket_name: elasticbeanstalk-eu-central-1-413281467786
+  bucket_path: dotnet-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
