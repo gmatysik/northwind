@@ -4,14 +4,12 @@
       {
         "name": "northwindservice",
         "image": "gmatysik/northwindservice",
-        "hostname": "northwindservice",
         "essential": true,
         "memory": 128
       },
       {
         "name": "northwindmvc",
         "image": "gmatysik/northwindmvc",
-        "hostname": "northwindmvc",
         "essential": false,
         "memory": 128,
         "portMappings": [
