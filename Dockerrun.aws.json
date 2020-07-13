@@ -5,7 +5,7 @@
         "name": "northwindservice",
         "image": "gmatysik/northwindservice",
         "hostname": "northwindservice",
-        "essential": false,
+        "essential": true,
         "memory": 128
       },
       {
