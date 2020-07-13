@@ -11,16 +11,7 @@
         "name": "northwindmvc",
         "image": "gmatysik/northwindmvc",
         "essential": false,
-        "memory": 128,
-        "portMappings": [
-          {
-            "hostPort": 80,
-            "containerPort": 80
-          }
-        ],
-        "links": [
-          "northwindservice"
-        ]
+        "memory": 128
       }
     ]
   }
